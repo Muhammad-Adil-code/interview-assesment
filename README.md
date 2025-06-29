@@ -1,9 +1,8 @@
 # Project Title 🎉
 
-Welcome to the Project! Here you can find all the information you need to get started. 
+**Watch video here:** [https://drive.google.com/file/d/1MyET0sA9yBXGhs76x1__sLPAFG3dJ8d3/view?usp=drive_link](https://drive.google.com/file/d/1MyET0sA9yBXGhs76x1__sLPAFG3dJ8d3/view?usp=drive_link)
 
-## 🎥 Watch the Demo
-[![Watch the demo](https://img.youtube.com/vi/demo-video.mp4/0.jpg)](public/videos/demo-video.mp4)
+Welcome to the Project! Here you can find all the information you need to get started. 
 
 ## 🚀 Getting Started
 1. Clone the repository
