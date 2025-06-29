@@ -21,6 +21,6 @@ This project uses Tailwind CSS for styling. Check the `tailwind.config.ts` for c
 ## 🛠️ Technologies Used
 - TypeScript
 - Tailwind CSS
-- React (or any other framework used)
+- Next.js
 
 Feel free to explore and contribute! 😊
