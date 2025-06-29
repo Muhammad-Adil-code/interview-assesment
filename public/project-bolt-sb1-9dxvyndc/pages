@@ -1,0 +1,20 @@
+// filepath: c:\Users\FINE\Downloads\project-bolt-sb1-9dxvyndc\project\pages\index.tsx
+import React from 'react';
+
+const HomePage: React.FC = () => {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-background">
+      <h1 className="text-4xl font-bold">Welcome to the Project! 🎉</h1>
+      <p className="mt-4 text-lg">This is the home page of your application.</p>
+      <div className="mt-8">
+        <h2 className="text-2xl">🎥 Watch the Demo</h2>
+        <video controls className="mt-2">
+          <source src="/videos/demo-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;

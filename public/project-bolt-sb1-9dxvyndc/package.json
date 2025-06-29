@@ -1,0 +1,29 @@
+{
+  "name": "project-bolt-sb1-9dxvyndc",
+  "version": "1.0.0",
+  "description": "A project that showcases various features and components.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "project",
+    "demo",
+    "tailwindcss",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "next": "^11.1.0",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "tailwindcss-animate": "^1.0.0"
+  }
+}
