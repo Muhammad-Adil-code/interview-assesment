@@ -495,7 +495,7 @@ export default function Home() {
               {/* MOBILE VERSION ONLY: Stages as toggles with always-visible image, title row with chevron, and description in a card, using timeline structure from previous code */}
               <div className="block lg:hidden relative">
                 {/* Single vertical line on the left, absolutely positioned */}
-                <div className="absolute left-5 top-4 bottom-0 w-0.5 bg-black" style={{zIndex: 0}}></div>
+                <div className="absolute left-5 top-4 bottom-0 w-0.5" style={{zIndex: 0, backgroundColor: '#168B00'}}></div>
                 <div className="relative z-10">
                   {[{
                     titleGreen: 'FIRST STAGE:',
@@ -561,7 +561,7 @@ export default function Home() {
               {/* Desktop Timeline (center) */}
               <div className="hidden lg:block">
                 {/* Central Vertical Line */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5" style={{backgroundColor: '#168B00'}}></div>
 
                 {/* Stage 1 - Left Side */}
                 <div className="relative mb-16">
