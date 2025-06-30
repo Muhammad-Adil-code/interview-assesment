@@ -74,47 +74,47 @@ export function AddReviewForm({ onClose, onReviewAdded }: AddReviewFormProps) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-lg font-bold">Add Your Review</h3>
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
+      <div className="bg-white rounded-lg p-4 sm:p-6 w-full max-w-sm sm:max-w-md max-h-[95vh] overflow-y-auto">
+        <div className="flex justify-between items-center mb-3 sm:mb-4">
+          <h3 className="text-base sm:text-lg font-bold">Add Your Review</h3>
           <Button variant="ghost" size="sm" onClick={onClose}>
             <X className="h-4 w-4" />
           </Button>
         </div>
 
         {error && (
-          <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+          <div className="mb-3 sm:mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded text-sm">
             {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Name *</label>
+            <label className="block text-xs sm:text-sm font-medium mb-1">Name *</label>
             <input
               type="text"
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               placeholder="Your name"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Title (optional)</label>
+            <label className="block text-xs sm:text-sm font-medium mb-1">Title (optional)</label>
             <input
               type="text"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               placeholder="e.g., DR., MR., MS."
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Rating *</label>
+            <label className="block text-xs sm:text-sm font-medium mb-1">Rating *</label>
             <div className="flex gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
                 <button
@@ -124,7 +124,7 @@ export function AddReviewForm({ onClose, onReviewAdded }: AddReviewFormProps) {
                   className="p-1 hover:scale-110 transition-transform"
                 >
                   <Star
-                    className={`h-6 w-6 ${
+                    className={`h-5 w-5 sm:h-6 sm:w-6 ${
                       star <= formData.rating
                         ? 'fill-amber-400 text-amber-400'
                         : 'text-gray-300 hover:text-amber-200'
@@ -136,34 +136,34 @@ export function AddReviewForm({ onClose, onReviewAdded }: AddReviewFormProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Your Review *</label>
+            <label className="block text-xs sm:text-sm font-medium mb-1">Your Review *</label>
             <textarea
               required
               value={formData.review_text}
               onChange={(e) => setFormData({ ...formData, review_text: e.target.value })}
-              className="w-full p-2 border border-gray-300 rounded-md h-24 focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              className="w-full p-2 border border-gray-300 rounded-md h-20 sm:h-24 focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               placeholder="Share your experience with CellTox..."
               minLength={10}
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Profile Image URL (optional)</label>
+            <label className="block text-xs sm:text-sm font-medium mb-1">Profile Image URL (optional)</label>
             <input
               type="url"
               value={formData.image_url}
               onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
-              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               placeholder="https://example.com/your-photo.jpg"
             />
           </div>
 
-          <div className="flex gap-2 pt-4">
+          <div className="flex gap-2 pt-3 sm:pt-4">
             <Button
               type="button"
               variant="outline"
               onClick={onClose}
-              className="flex-1"
+              className="flex-1 text-sm"
               disabled={submitting}
             >
               Cancel
@@ -171,14 +171,14 @@ export function AddReviewForm({ onClose, onReviewAdded }: AddReviewFormProps) {
             <Button
               type="submit"
               disabled={submitting || !formData.name.trim() || !formData.review_text.trim()}
-              className="flex-1 bg-green-600 hover:bg-green-700 disabled:opacity-50"
+              className="flex-1 bg-green-600 hover:bg-green-700 disabled:opacity-50 text-sm"
             >
               {submitting ? 'Submitting...' : 'Submit Review'}
             </Button>
           </div>
         </form>
 
-        <div className="mt-4 text-xs text-gray-500 text-center">
+        <div className="mt-3 sm:mt-4 text-xs text-gray-500 text-center">
           Your review will be moderated before appearing on the website.
         </div>
       </div>
