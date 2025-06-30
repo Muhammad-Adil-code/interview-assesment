@@ -17,14 +17,12 @@ export default function DualActionSection() {
 
   return (
     <div className="relative min-h-screen bg-green-50 py-8 sm:py-16 px-4 overflow-hidden">
-      {/* Decorative Green Leaf Top Left */}
-      <div className="absolute top-0 left-0 z-0 -mt-6 sm:mt-8"
-        style={{ width: '7.5rem', height: '7.5rem' }}
-      >
+      {/* Decorative Green Leaf Top Left - only 50% visible in section */}
+      <div className="absolute -top-16 -left-16 z-0" style={{ width: '7.5rem', height: '7.5rem' }}>
         <img
           src="/images/falling-green-leaves-natures-graceful-dance 2.png"
           alt="Green leaf"
-          className="w-full h-full object-contain mb-16 lg:mb-0 lg:w-96 lg:h-96"
+          className="w-full h-full object-contain"
         />
       </div>
 
