@@ -1112,7 +1112,7 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: '#121212',
+        color: 'black',
         textAlign: 'left',
         marginBottom: 0
       }}>
@@ -1164,7 +1164,7 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: '#121212',
+        color: 'black',
         textAlign: 'left',
         marginBottom: 0
       }}>
@@ -1216,7 +1216,7 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: '#121212',
+        color: 'black',
         textAlign: 'left',
         marginBottom: 0
       }}>
@@ -1317,9 +1317,9 @@ export default function Home() {
           <div style={{backgroundColor:'#FFF' }} className="block lg:hidden w-full">
             <div style={{backgroundColor:'#F0FFED', borderColor:'green' }}  className="relative  border-2  rounded-2xl px-2 pt-8 pb-5 shadow-lg overflow-hidden">
               {/* Top left leaf - about 5% in card, still large */}
-              <img src="/images/falling-green-leaves-natures-graceful-dance 2.png" alt="" className="absolute -top-32 -left-32  object-contain" style={{zIndex:1, marginTop:'-210px', marginLeft:'-150px', width:'595px', height:'595px'}} />
+              <img src="/images/falling-green-leaves-natures-graceful-dance 2.png" alt="" className="absolute -top-32 -left-32  object-contain" style={{zIndex:1, marginTop:'-205px', marginLeft:'-145px', width:'595px', height:'595px'}} />
               {/* Top right leaf - about 5% in card, still large */}
-              <img src="/images/falling-green-leaves-natures-graceful-dance 2.png" alt="" className="absolute -top-32 -right-32   object-contain" style={{zIndex:1, marginTop:'-250px', marginRight:'-110px', width:'595px', height:'595px', transform:'scaleX(-1)'}} />
+              <img src="/images/falling-green-leaves-natures-graceful-dance 2.png" alt="" className="absolute -top-32 -right-32   object-contain" style={{zIndex:1, marginTop:'-230px', marginRight:'-105px', width:'595px', height:'595px', transform:'scaleX(-1)'}} />
               {/* Green computer icon replaced with Frame 34 image */}
               <div className="flex justify-center mb-3">
                 <img src="/images/Frame 34.png" alt="Quality Trust Icon" style={{ width: '84px', height: '84px', objectFit: 'contain', borderRadius: '6px' }} />
