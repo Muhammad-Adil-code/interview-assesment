@@ -24,7 +24,7 @@ export default function BreakthroughFormulaSection() {
         </div>
         {/* Mobile Header Section (separate) */}
         <div className="text-center mt-4 mb-8 block lg:hidden">
-          <h1 className="text-xl  mb-3" style={{ fontFamily:'arial, Staatliches', fontWeight:'800', fontSize:'15px',verticalAlign:'middle', transform:'scaleY(1.5)', lineHeight:'120%'}}>
+          <h1 className="text-xl  mb-3" style={{ fontFamily:'arial, Staatliches', fontWeight:'800', fontSize:'16px',verticalAlign:'middle', transform:'scaleY(1.5)', lineHeight:'120%'}}>
             <span className="text-gray-900">CELLTOX: </span>
             <span style={{color:'#20C500'}}>BREAKTHROUGH FORMULA</span>
             <span className="text-gray-900"> SUPPORTS </span>
