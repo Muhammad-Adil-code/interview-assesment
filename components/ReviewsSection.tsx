@@ -68,8 +68,18 @@ export function ReviewsSection() {
       <section className="py-8 sm:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-green-600 uppercase tracking-wide mb-6 sm:mb-8">
-              THOUSANDS OF PEOPLE LOVE CELLTOX
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide" style={{
+              fontFamily: 'Staatliches, Arial, sans-serif',
+              fontWeight: 800,
+              fontSize: '15px',
+              transform: 'scaleY(1.5)',
+              color: '#000',
+              letterSpacing: 0,
+              textAlign: 'center',
+              marginBottom: 8,
+              lineHeight:'120%'
+            }}>
+              <span style={{color:'#20C500'}}>THOUSANDS</span> OF PEOPLE LOVE CELLTOX
             </h2>
             <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded text-sm">
               {error}. Please refresh the page to try again.
@@ -81,12 +91,39 @@ export function ReviewsSection() {
   }
 
   return (
-    <section className="py-8 sm:py-16 bg-white">
+    <section className="py-8 sm:py-16 bg-white" style={{ background: '#F7F7F7' }}>
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-green-600 uppercase tracking-wide">
-            THOUSANDS OF PEOPLE LOVE CELLTOX
+        {/* Mobile Title */}
+        <div className="text-center mb-8 sm:mb-12 block lg:hidden">
+          <h2 className="text-2xl uppercase" style={{
+            fontFamily: 'Staatliches, Arial, sans-serif',
+            fontWeight: 800,
+            fontSize: '15px',
+            transform: 'scaleY(1.5)',
+            color: '#000',
+            letterSpacing: 0,
+            textAlign: 'center',
+            marginBottom: 8,
+            lineHeight:'120%'
+          }}>
+            <span style={{color:'#20C500'}}>THOUSANDS</span> OF PEOPLE LOVE CELLTOX
+          </h2>
+        </div>
+        {/* Desktop Title */}
+        <div className="text-center mb-8 sm:mb-12 hidden lg:block">
+          <h2 className="text-3xl uppercase" style={{
+            fontFamily: 'Staatliches, Arial, sans-serif',
+            fontWeight: 599,
+            fontSize: '26px',
+            transform: 'scaleY(1.45)',
+            color: '#000',
+            letterSpacing: 0,
+            textAlign: 'center',
+            marginBottom: 8,
+            lineHeight:'150%'
+          }}>
+            <span style={{color:'#20C500'}}>THOUSANDS</span> OF PEOPLE LOVE CELLTOX
           </h2>
         </div>
 
