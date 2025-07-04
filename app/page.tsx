@@ -684,7 +684,7 @@ export default function Home() {
                     img: '/images/stage2.jpg',
                     imgAlt: 'Couple enjoying better health',
                     defaultOpen: false,
-                    cardHeight: 428,
+                    cardHeight: 440,
                   }, {
                     titleGreen: 'FINAL STAGE:',
                     titleRest: ' CONTINUED SUPPORT',
@@ -1112,9 +1112,10 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: 'black',
+        color: '#000',
         textAlign: 'left',
-        marginBottom: 0
+        marginBottom: 0,
+        zIndex:'1000'
       }}>
         Cancer cells hijack your body's energy production, consuming up to 200 times more glucose than normal cells. This energy theft not only fuels their growth but leaves healthy cells starving.
       </p>
@@ -1164,9 +1165,10 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: 'black',
+        color: '#000',
         textAlign: 'left',
-        marginBottom: 0
+        marginBottom: 0,
+        zIndex:'1000'
       }}>
         Cancer cells develop sophisticated methods to hide from your immune system, creating proteins that act like "invisibility cloaks" and preventing your natural defenses from recognizing and eliminating them.
       </p>
@@ -1216,9 +1218,10 @@ export default function Home() {
         fontWeight: 100,
         fontSize: 12.7,
         lineHeight: '20px',
-        color: 'black',
+        color: '#000',
         textAlign: 'left',
-        marginBottom: 0
+        marginBottom: 0,
+        zIndex:'1000'
       }}>
         Unlike normal cells that have built-in limits on division, cancer cells multiply uncontrollably, ignoring the signals that tell healthy cells when to stop growing.
       </p>
