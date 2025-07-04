@@ -669,7 +669,7 @@ export default function Home() {
                     img: '/images/stage1.jpg',
                     imgAlt: 'Initial support phase',
                     defaultOpen: true,
-                    cardHeight: 370,
+                    cardHeight: 372,
                   }, {
                     titleGreen: 'REST PERIOD:',
                     titleRest: ' OPTIMIZATION PHASE',
@@ -684,7 +684,7 @@ export default function Home() {
                     img: '/images/stage2.jpg',
                     imgAlt: 'Couple enjoying better health',
                     defaultOpen: false,
-                    cardHeight: 420,
+                    cardHeight: 428,
                   }, {
                     titleGreen: 'FINAL STAGE:',
                     titleRest: ' CONTINUED SUPPORT',
@@ -699,7 +699,7 @@ export default function Home() {
                     img: '/images/stage3.jpg',
                     imgAlt: 'Healthy active lifestyle',
                     defaultOpen: false,
-                    cardHeight: 410,
+                    cardHeight: 415,
                   }].map((stage, idx) => (
                     <div className="relative mb-10" key={idx}>
                       {/* Dot, perfectly centered on the line */}
